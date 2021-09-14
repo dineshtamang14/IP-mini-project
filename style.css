@@ -84,6 +84,7 @@ section::after {
 	margin: 0;
 	position: relative;
 	z-index: 1;
+	margin-top: .5rem;
 }
 
 .section-title:hover {
