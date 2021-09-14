@@ -9,8 +9,10 @@ switchers.forEach(item => {
 
 
 // form validation secton
-
 // for signup field
+const form = $("#form-signup");
+const email = $("#signup-email");
+const password = $("#signup-password");
+const confirmPassword = $("#signup-password-confirm");
+const errorMessage = $("#ërror");
 
-const email = document.getElementById("signup-email");
-console.log(email);

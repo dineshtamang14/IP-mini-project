@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>registraion form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="registration.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <main class="container">
+            <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <h1>Registration Form</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <div>
+                                    <label for="male" class="radio-inline">
+                                        <input type="radio" name="gender" id="male" required autocomplete="off">
+                                        Male
+                                    </label>
+                                    <label for="male" class="radio-inline">
+                                        <input type="radio" name="gender" id="female" required autocomplete="off">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" class="form-control" id="date" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Profile photo</label>
+                                <input type="file" name="profile" id="profile">
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Phone Number</label>
+                                <input type="number" class="form-control" id="number" required autocomplete="off">
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </form>
+                    </div>
+                    <div class="panel-footer text-righ">
+                        <small>&copy; IP Project, 2021</small>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

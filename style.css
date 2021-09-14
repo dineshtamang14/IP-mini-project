@@ -3,6 +3,9 @@
                             #ee6352, 
                             purple, 
                             #ee6352);
+						
+								/* variable in css */
+	--colorForHeader: #E50914;
 }
 
 *,
@@ -12,6 +15,7 @@
 }
 
 body {
+	overflow: hidden;
     font-family: basic-sans, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -22,11 +26,34 @@ body {
     color: #333;
     background: #ddd;
     background-size: 300%;
-    background-image: var(--gradient);
-    animation: color-change 15s infinite alternate;
+    /* background-image: var(--gradient);
+    animation: color-change 15s infinite alternate; */
+	background: url("background.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-@keyframes color-change {
+/* section::before{
+	content: '';
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to bottom, #000, transparent);
+}
+
+section::after {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(to top, #000, transparent);
+} */
+
+/* @keyframes color-change {
     0% {
         background-position: left
     }
@@ -36,7 +63,7 @@ body {
     100% {
         background-position: left
     }
-}
+} */
 
 /* title words */
 
@@ -55,6 +82,8 @@ body {
 	line-height: 0.8;
 	color: #fff;
 	margin: 0;
+	position: relative;
+	z-index: 1;
 }
 
 .section-title:hover {
@@ -104,17 +133,27 @@ body {
 	font-family: inherit;
 	font-size: 16px;
 	letter-spacing: .5px;
-	color: #999;
+	color: rgba(245, 251, 252, 0.925);
 	background-color: transparent;
 	border: none;
 	outline: none;
 	transform: translateX(0);
 	transition: all .3s ease-out;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.switcher:hover,
+.switcher:active {
+	color: #09c96f;
+	padding: .4rem;
+	font-size: 1.2rem;
 }
 
 .form-wrapper.is-active .switcher-login {
 	color: #fff;
-	transform: translateX(90px);
+	transform: translateX(90px);	
 }
 
 .form-wrapper.is-active .switcher-signup {
@@ -318,8 +357,23 @@ body {
 
 .btn-signup {
 	color: #a7e245;
-	background: #fbfdff;
+	/* background: #fbfdff; */
+	background-color: #a7e245;
 	box-shadow: inset 0 0 0 2px #a7e245;
 	transform: translateX(30%);
     cursor: pointer;
+}
+
+.btn-signup a {
+	background-color: #a7e245;
+	color: #fff;
+}
+
+.footer .footer-content {
+	position: relative;
+	z-index: 1000;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 2rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

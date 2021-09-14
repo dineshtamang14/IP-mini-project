@@ -1,0 +1,29 @@
+:root {
+    --gradient: linear-gradient(90deg, 
+                            #ee6352, 
+                            purple, 
+                            #ee6352);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 1.5rem auto;
+}
+
+#heading {
+    background-color: #64C9CF;
+}
+
