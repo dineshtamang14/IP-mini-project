@@ -12,12 +12,12 @@ function formValidation(){
 
     
     //checking enterd name
-    if(2 < name.length <= 20){
+    if((name.length <= 2) || (name.length > 20)){
         setError("fname-err", "*Length of the First name is too short or long!");
         returnVal = false;
     }
 
-    if(2 < last.length <= 20){
+    if((last.length <= 2) || (last.length > 20)){
         setError("lname-err", "*Length of the last name is too short or long!")
     }
 
@@ -26,6 +26,10 @@ function formValidation(){
     if(email.length <= 25){
         setError("email-err", "*your email is too long.");
         returnVal = false;
+    } else if(email.indexOf('@') <= 0 ){
+        setError("email-err", "*@ position should not be in 0th position.");
+    } else if((email.charAt(emails.length-4)!='.') && (email.charAt(emails.length-3)!='.')){
+        setError("email-err", "*.Invalid Position.");
     }
 
     // phone number checking
@@ -36,6 +40,8 @@ function formValidation(){
     } else if(phone.length > 10) {
         setError("phone-err", "*you have entered more No.")
         returnVal = false;
+    } else if(isNaN(mobileNumber)){
+        setError("phone-err", "*Please enter number only.");
     }
 
     return returnVal;
