@@ -28,7 +28,7 @@ body {
     background-size: 300%;
     /* background-image: var(--gradient);
     animation: color-change 15s infinite alternate; */
-	background: url("background.jpg") no-repeat;
+	background: url("../img/background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
